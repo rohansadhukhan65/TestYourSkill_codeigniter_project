@@ -8,9 +8,9 @@ class Online_exam extends CI_Controller
 
 
     //! this is for home page
-    function home()
+    function index()
     {
-        $this->load->view('home');
+        $this->load->view('user/home');
     }
 
 

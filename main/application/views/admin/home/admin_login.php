@@ -33,7 +33,7 @@
                     <input type="password" name="pass" required autocomplete="off">
                     <label for="user">password</label>
                 </div>
-                <input type="submit" name="submit" value="login" class="btn mt-5 btn-primary shadow my-3" style="border-radius: 10px;">
+                <input type="submit" name="submit" value="login" class="btn mt-3 btn-primary shadow my-3" style="border-radius: 10px;">
             </form>
             <!-- Login Form End -->
 

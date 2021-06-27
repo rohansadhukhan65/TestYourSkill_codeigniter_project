@@ -4,14 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback</title>
+  <title>Home</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-  <script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css'); ?>">
+  <style>
+    .main {
+      position: relative;
+      top: 5%;
+      left: 14%;
+
+    }
+
+    .startbtn {
+      border-radius: 25px;
+      font-size: larger;
+    }
+
+    .centerimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      filter: drop-shadow(10px 14px 24px rgba(0, 0, 0, 0.466));
+
+    }
+
+    
+  </style>
 </head>
 
-<body style="background-image: url('<?php echo base_url(); ?>image/start.jpg');background-size:cover;">
+<body>
+  <!-- style="background-image: url('<?php echo base_url(); ?>image/home3.jpg');background-size:cover;" -->
+
 
   <!--//! ================ Home Navigation ================ -->
   <nav class="navbar navbar-expand-lg shadow navbar-dark bg-primary">
@@ -33,7 +58,7 @@
     ====================================== -->
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-        <li class="nav-item ">
+        <li class="nav-item active">
           <a class="nav-link" href="index">Home<span class="sr-only">(current)</span></a>
         </li>
 
@@ -43,7 +68,7 @@
         <li class="nav-item">
           <a class="nav-link" href="contact">Contact Us</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="feedback">Feedback</a>
         </li>
       </ul>
@@ -63,60 +88,30 @@
 
 
 
-  <div class="container my-3">
-    <?php
-    if (isset($_SESSION['msg'])) {
-    ?>
-      <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
-        <strong>Thank you 🤗</strong> <?php echo $_SESSION['msg']; ?>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    <?php
-    }
-    ?>
-    <h3 class="center text-info text-center mt-5 alert alert-warning">Give Feedback</h3>
-    <div class="row">
-      <div class="col-sm-6 offset-3">
-        <form onsubmit="return feed(event)" method="POST">
-          <h3 class="mx-1 contact_heading">Name</h3>
-          <div class="form-group">
-            <input type="text" name="student_name" class="form-control" id="student_name_feed" required autocomplete="off" aria-describedby="emailHelp">
-          </div>
-
-          <div id="stu_error" class="text-danger"></div>
-
-
-          <h3 class="mx-1">Email</h3>
-          <div class="form-group">
-            <input type="email" name="email" class="form-control" id="addemail" autocomplete="off" required aria-describedby="emailHelp">
-          </div>
-
-          <div id="email_errro" class="text-danger"></div>
-
-
-          <h3 class="mx-1">Share your experience</h3>
-          <div class="form-group">
-            <textarea class="form-control" name="experience" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <div id="issuebk_errro" class="text-danger"></div>
-
-          <div class="row text-center">
-            <div class="col">
-              <input type="submit" id="addbtn3" name="submit" value="Submit" class="mt-3 mb-3">
-            </div>
-            <div class="col">
-              <a href="home" class="text-center btn btn-warning rounded mt-3 mb-3">Cancel</a>
-            </div>
-          </div>
-          <!--this is for error showing if any occcur-->
-          <div id="adderror" class="mt-2 text-danger"></div>
-        </form>
+  <!--//! ============== Main Body Of Home ================  -->
+  <div class="row">
+    <div class="col-12 col-md-6 disapear">
+      <img class="centerimg mt-5" src="<?php echo base_url('image/userside/home.svg') ?>" height="500" alt="">
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="mt-5 pt-5">
+        <h1 class="my-5 pt-5 text-primary text-center font-weight-light">
+          Welcome to <span class="font-weight-bold">TestYourSkill</span>
+        </h1>
+        <p class="text-center text-primary">“Skills don’t die; only people do.”</p>
+        <div class="mt-5 pt-3 text-center">
+          <a href="studentlog" class="btn shadow font-weight-light startbtn w-50 btn-success">
+            Get Started
+          </a>
+        </div>
       </div>
     </div>
   </div>
+  <!--//! ================ Main Body Of Home End ================ -->
+
+
+
+
 
 
 

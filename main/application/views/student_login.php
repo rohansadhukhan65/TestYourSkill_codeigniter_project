@@ -39,17 +39,25 @@
 
         <a class="navbar-brand text-light font-weight-bold">TestYourSkill</a>
 
+        <!-- Login button
+        ======================== -->
+        <div class="apear ml-auto mr-2">
+            <a href="studentlog" class="btn px-4 text-primary btn-light">Login</a>
+        </div>
+        <!-- Login button end -->
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Collapsable nav in mobile
+        ====================================== -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a class="nav-link" href="index">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="studentlog">Login<span class="sr-only">(current)</span></a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="about">About Us</a>
                 </li>
@@ -61,8 +69,18 @@
                 </li>
             </ul>
         </div>
+        <!-- Collapsable nav in mobile End -->
+
+        <!-- Login button
+        ======================== -->
+        <div class="disapear">
+            <a href="studentlog" class="btn px-4 text-primary btn-light">Login</a>
+        </div>
+        <!-- Login button end -->
+
     </nav>
     <!--//! ================ Home Navigation End ================ -->
+
 
 
     <div class="container my-5">

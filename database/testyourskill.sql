@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2021 at 09:19 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.3.26
+-- Generation Time: Jun 28, 2021 at 12:29 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `project_kingston`
+-- Database: `testyourskill`
 --
 
 -- --------------------------------------------------------
@@ -59,9 +59,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`std_id`, `student_name`, `email`, `phone`, `query`) VALUES
-(3, 'abc', 'abc@gamil.com', 4578963214, 'rtert'),
-(4, 'xyz', 'xyz@gmail.com', 4578693254, 'tum kya help kroge'),
-(5, 'Rakesh Ghosh', 'abc@gmail.com', 9735780116, 'How i can login here?');
+(9, 'rohan', 'rohansadhukhan88@gmail.com', 7003459639, 'how to login ?');
 
 -- --------------------------------------------------------
 
@@ -81,7 +79,6 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`feed_id`, `name`, `email`, `experience`) VALUES
-(1, 'arijit', 'arijit@gmail.com', 'your website is awesome'),
 (6, 'Rakesh Ghosh', 'abc@gmail.com', 'The Website is very good for test my skill.');
 
 -- --------------------------------------------------------
@@ -106,7 +103,7 @@ CREATE TABLE `question_table` (
 --
 
 INSERT INTO `question_table` (`q_id`, `topic`, `question`, `op1`, `op2`, `op3`, `op4`, `answer`) VALUES
-(6, 'Php Mcq Test1', 'What does PHP stand for?', 'Personal Home Page', ' Hypertext Preprocessor', ' Both OptionA & OptionB', 'Only OptionB', '3'),
+(6, 'Php Mcq Test1', 'What does PHP stand for?????1', 'Personal Home Page', ' Hypertext Preprocessor', ' Both OptionA & OptionB', 'Only OptionB', '3'),
 (7, 'Php Mcq Test1', 'PHP files have a default file extension of_______', '.html', '.xml', '.php', '.ph', '3'),
 (8, 'Php Mcq Test1', 'Can we write html code in php file?', 'Yes', 'No', 'Maybe', 'It depends on the system', '1'),
 (9, 'Php Mcq Test1', 'Which of the following is/are a PHP code editor?', 'Notepad', 'Notepad++', 'Adobe Dreamweaver', 'All The Above', '4'),
@@ -489,8 +486,7 @@ CREATE TABLE `student_details` (
 
 INSERT INTO `student_details` (`std_id`, `name`, `email`, `password`, `phone`, `date`) VALUES
 (1, 'Reettwick Ghosh', 'reettwick225@gmail.com', '202cb962ac59075b964b07152d234b70', 9735780116, '2021-05-18'),
-(2, 'Papri Ghosh', 'paprighosh620@gmail.com', 'fecbfa88f364df34c32702b62f11a7d9', 9883413247, '2021-05-18'),
-(3, 'Gopal Pramanik', 'gopalpramanik.ejobindia@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 9735780451, '2021-05-20');
+(8, 'admin', 'admin@gmail.com', '3929262652cb6594a5c26c97a904a292', 1234567892, '2021-06-26');
 
 -- --------------------------------------------------------
 
@@ -510,126 +506,8 @@ CREATE TABLE `student_result` (
 --
 
 INSERT INTO `student_result` (`std_id`, `name`, `topic`, `score`) VALUES
-(2, 'arijit', 'Java Mcq Test1', 2),
-(7, 'arijit', 'Java Mcq Test1', 2),
-(8, 'arijit', 'Java Mcq Test1', 0),
-(9, 'rittik', 'C Mcq Test1', 1),
-(10, 'hat', 'C Mcq Test1', 0),
-(11, 'rittik', 'C Mcq Test1', 0),
-(12, 'rittik', 'C Mcq Test1', 0),
-(13, 'rittik', 'C Mcq Test1', 1),
-(14, 'rittik', 'C Mcq Test1', 1),
-(15, 'rittik', 'C Mcq Test1', 1),
-(16, 'rittik', 'Php Mcq Test1', 0),
-(17, 'rittik', 'Php Mcq Test1', 0),
-(18, 'rittik', 'Php Mcq Test1', 0),
-(19, 'rittik', 'Php Mcq Test1', 0),
-(20, 'rittik', 'Php Mcq Test1', 0),
-(21, 'rittik', 'Php Mcq Test1', 0),
-(22, 'rittik', 'Php Mcq Test1', 0),
-(23, 'rittik', 'Php Mcq Test1', 0),
-(24, 'rittik', 'Php Mcq Test1', 0),
-(25, 'rittik', 'Php Mcq Test1', 0),
-(26, 'rittik', 'Php Mcq Test1', 0),
-(27, 'rittik', 'Php Mcq Test1', 0),
-(28, 'rittik', 'Php Mcq Test1', 0),
-(29, 'rittik', 'Php Mcq Test1', 0),
-(30, 'rittik', 'Php Mcq Test1', 0),
-(31, 'rittik', 'Php Mcq Test1', 0),
-(32, 'rittik', 'Php Mcq Test1', 0),
-(33, 'rittik', 'C Mcq Test1', 1),
-(34, 'rittik', 'Php Mcq Test1', 0),
-(35, 'rittik', 'Php Mcq Test1', 0),
-(36, 'rittik', 'Php Mcq Test1', 0),
-(37, 'rittik', 'Php Mcq Test1', 0),
-(38, 'rittik', 'Php Mcq Test1', 0),
-(39, 'rittik', 'Php Mcq Test1', 0),
-(40, 'rittik', 'C Mcq Test1', 1),
-(41, 'rittik', 'Php Mcq Test1', 0),
-(42, 'rittik', 'C Mcq Test1', 1),
-(43, 'rittik', 'Php Mcq Test1', 0),
-(44, 'rittik', 'C Mcq Test1', 1),
-(45, 'rittik', 'C Mcq Test1', 0),
-(46, 'hat', 'Java Mcq Test1', 0),
-(47, 'rittik', 'Java Mcq Test1', 1),
-(48, 'rittik', 'Java Mcq Test1', 1),
-(49, 'hat', 'Java Mcq Test1', 0),
-(50, 'hat', 'Java Mcq Test1', 0),
-(51, 'faizan', 'Java Mcq Test1', 1),
-(52, 'Sourav Ghosh', 'Antonyms', 2),
-(53, 'Ritika Dhar', 'C Mcq Test1', 2),
-(54, 'Ritika Dhar', 'C Mcq Test1', 1),
-(55, 'Reettwick Ghosh', 'Problem Set1', 1),
-(56, 'Reettwick Ghosh', 'Problem Set1', 1),
-(57, 'Reettwick Ghosh', 'Problem Set1', 1),
-(58, 'Reettwick Ghosh', 'Problem Set1', 3),
-(59, 'Reettwick Ghosh', 'Problem Set2', 1),
-(60, 'Reettwick Ghosh', 'History', 2),
-(61, 'Reettwick Ghosh', 'Problem Set1', 0),
-(62, 'Reettwick Ghosh', 'Problem Set1', 0),
-(63, 'Reettwick Ghosh', 'Problem Set1', 0),
-(64, 'Reettwick Ghosh', 'Problem Set1', 0),
-(65, 'Reettwick Ghosh', 'Problem Set1', 0),
-(66, 'Reettwick Ghosh', 'Problem Set1', 0),
-(67, 'Reettwick Ghosh', 'Problem Set1', 1),
-(68, 'Reettwick Ghosh', 'Php Mcq Test1', 1),
-(69, 'Reettwick Ghosh', 'Php Mcq Test1', 1),
-(70, 'Reettwick Ghosh', 'Problem Set1', 1),
-(71, 'Reettwick Ghosh', 'Problem Set1', 1),
-(72, 'Reettwick Ghosh', 'Problem Set1', 1),
-(73, 'Gopal Pramanik', 'C Mcq Test1', 3),
-(74, 'Gopal Pramanik', 'C Mcq Test1', 3),
-(75, 'Gopal Pramanik', 'C Mcq Test1', 3),
-(76, 'Gopal Pramanik', 'Problem Set1', 1),
-(77, 'Gopal Pramanik', 'Problem Set1', 1),
-(78, 'Reettwick Ghosh', 'Java Mcq Test1', 1),
-(79, 'Reettwick Ghosh', 'Java Mcq Test1', 2),
-(80, 'R', 'Problem Set1', 1),
-(81, 'R', 'Problem Set3', 0),
-(82, 'R', 'Time and Distance', 0),
-(83, 'R', 'Time and Work', 2),
-(84, 'R', 'Problems on Ages', 2),
-(85, 'R', 'Simple Interest', 3),
-(86, 'R', 'Height and Distance', 1),
-(87, 'R', 'Spotting Errors', 2),
-(88, 'R', 'Spotting Errors', 0),
-(89, 'R', 'Spotting Errors', 0),
-(90, 'R', 'Spotting Errors', 1),
-(91, 'R', 'Antonyms', 2),
-(92, 'R', 'Spelling', 5),
-(93, 'R', 'Spelling', 0),
-(94, 'R', 'Number Series', 2),
-(95, 'R', 'Verbal Classification', 1),
-(96, 'R', 'Logical Games', 3),
-(97, 'R', 'Series', 2),
-(98, 'R', 'History', 4),
-(99, 'R', 'Biology', 2),
-(100, 'R', 'Countries and Sports', 0),
-(101, 'R', 'Neighbouring Country', 1),
-(102, 'R', 'Capital and Currencies', 2),
-(103, 'R', 'Physics', 0),
-(104, 'R', 'Physics', 1),
-(105, 'R', 'Chemistry', 3),
-(106, 'R', 'Computer', 0),
-(107, 'R', 'Current Affairs 2019', 4),
-(108, 'R', 'Current Affairs 2020', 2),
-(109, 'R', 'Current Affairs 2021', 3),
-(110, 'R', 'Current Affairs 2021', 2),
-(111, 'R', 'Java Mcq Test1', 4),
-(112, 'R', 'Java Mcq Test2', 2),
-(113, 'R', 'Java Mcq Test2', 1),
-(114, 'R', 'Java Mcq Test3', 2),
-(115, 'R', 'Java Mcq Test3', 1),
-(116, 'R', 'C Mcq Test1', 4),
-(117, 'R', 'C Mcq Test2', 1),
-(118, 'R', 'C Mcq Test3', 5),
-(119, 'R', 'Php Mcq Test2', 2),
-(120, 'R', 'Php Mcq Test2', 4),
-(121, 'R', 'Php Mcq Test3', 6),
-(122, 'R', 'Php Mcq Test3', 6),
-(123, 'Papri Ghosh', 'History', 2),
-(124, 'Papri Ghosh', 'Php Mcq Test3', 0),
-(125, 'Gopal Pramanik', 'Php Mcq Test3', 0);
+(127, 'decode_ro', 'C Mcq Test1', 2),
+(132, 'admin', 'Chemistry', 2);
 
 --
 -- Indexes for dumped tables
@@ -685,31 +563,31 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `question_table`
 --
 ALTER TABLE `question_table`
-  MODIFY `q_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=377;
+  MODIFY `q_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=389;
 
 --
 -- AUTO_INCREMENT for table `student_details`
 --
 ALTER TABLE `student_details`
-  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `student_result`
 --
 ALTER TABLE `student_result`
-  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

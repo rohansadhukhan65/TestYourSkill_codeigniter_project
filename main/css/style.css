@@ -1,0 +1,256 @@
+/*============================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ admin login page $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+======================================================================================================================= */
+
+.home {
+	border: aqua;
+	border-radius: 20px;
+}
+ 
+ 
+/* to center the form */
+.submain {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	 
+	border-color: aliceblue;
+	 
+	border-radius: 25px;
+}
+.undermain {
+	position: relative;
+}
+label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 17px;
+	transition: all 0.5s;
+	color: #007bff;
+}
+h2 {
+	margin-bottom: 35px;
+	text-align: center;
+	color: #007bff;
+}
+input {
+	margin-bottom: 35px;
+	padding: 0px 4px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #007bff ;
+	background: transparent;
+	width: 100%;
+	color: #007bff;
+}
+ 
+input:focus ~ label,
+input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 15px;
+	color: rgb(0, 123, 255);
+}
+/*========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ admin login page End $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ===================================================================================================================*/
+
+
+
+
+
+/*=========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ student login page $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+=========================================================================================================== */
+ * {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+.form-box {
+	width: 21rem;
+	height: 410px;
+	position: relative;
+	margin: 6% auto;
+	background: white;
+	padding: 5px;
+	overflow: hidden;
+	border-radius: 10px 20px;
+}
+
+
+
+/*=======================================
+ loggin signup slider button 
+======================================= */
+
+	.button-box 
+	{
+		width: 233px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow: 0 0 20px 9px #0e0e0e1f;
+		border-radius: 30px;
+		outline: none;
+	}
+	.toogle
+	{
+		padding: 9px 30px;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		outline: none;
+		position: relative;
+		
+	}
+	#btn 
+	{
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 120px;
+		height: 100%;
+		background: aliceblue;
+	
+		border-radius: 20px;
+		transition: 0.5s;
+	}
+	#btn1,#btn2 
+	{
+		border: 0;
+		outline: none;
+	}
+	#btn1
+	{
+		color: #007bff;
+		font-weight: bold;
+	}
+	#btn2
+	{
+		color: aliceblue;
+	}
+
+/* =======================================
+ loggin signup slider button  End 
+======================================== */
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+/*==========================================
+ Form & Input Field
+========================================= */
+
+	.input-group 
+	{
+		top: 110px;
+		position: absolute;
+		width: 280px;
+		transition: 0.5s;
+	}
+
+	.input-field 
+	{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid aliceblue;
+		outline: none;
+		background: transparent;
+	}
+	.input-field::placeholder
+	{
+		color: aliceblue;
+		font-weight: lighter;
+	}
+
+/*=========================================
+ Form & Input Field End 
+==========================================*/
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+/*============================================
+Login/Signup Button
+=========================================== */
+
+	input[type="submit"] {
+		width: 85%;
+		padding: 5px 30px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		border: 0;
+		outline: none;
+		border-radius: 30px;
+	}
+
+
+/*=========================================
+ Login/Signup Button End
+======================================== */
+
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+
+
+
+#login {
+	left: 50px;
+}
+
+#register {
+	left: 450px;
+}  
+
+/*====================================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ student login page End $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+====================================================================================================================== */
+
+
+/* It is the color of card body of testpage*/
+#box1 {
+	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
+	background-color: rgb(233, 104, 153);
+	border-radius: 15px 25px;
+}
+
+#box2 {
+	/* background-image: -webkit-linear-gradient(left,rgb(123, 255, 0),rgb(255, 102, 0)); */
+	background-color: rgb(92, 243, 167);
+	border-radius: 15px 25px;
+}
+
+#box3 {
+	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
+	background-color: rgb(122, 216, 216);
+	border-radius: 15px 25px;
+}
+
+#box4 {
+	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
+	background-color: rgb(240, 213, 61);
+	border-radius: 15px 25px;
+}
+
+#box5 {
+	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
+	background-color: rgb(161, 170, 218);
+	border-radius: 15px 25px;
+}
+
+#box6 {
+	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
+	background-color: rgb(163, 236, 143);
+	border-radius: 15px 25px;
+}
+

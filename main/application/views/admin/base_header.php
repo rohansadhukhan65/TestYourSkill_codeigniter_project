@@ -25,7 +25,11 @@
     ================================================== -->
     <link rel="stylesheet" href="https://bootadmin.org/style/vendor/library.min.css">
     <link rel="stylesheet" href="https://bootadmin.org/style/vendor/jqueryui-flat/jquery-ui.min.css">
+
+    <!-- Fontawsome CDN
+    ======================== -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Fontawsome CDN End -->
 
 
     <link rel="stylesheet" href="https://bootadmin.org/style/core/style.min.css">

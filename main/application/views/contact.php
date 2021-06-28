@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
   <script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
+
+
+  <!-- Fontawsome CDN
+  ======================== -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- Fontawsome CDN End -->
+
 </head>
 
 <body style="background-image: url('<?php echo base_url(); ?>image/start.jpg');background-size:cover;">
@@ -24,7 +31,7 @@
     <!-- Login button
     ======================== -->
     <div class="apear ml-auto mr-2">
-      <a href="studentlog" class="btn px-4 text-primary btn-light">Login</a>
+      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
     </div>
     <!-- Login button end -->
 
@@ -36,18 +43,17 @@
     ====================================== -->
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index">Home<span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="about">About Us</a>
-        </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact">Contact Us</a>
+          <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="feedback">Feedback</a>
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>"><i class="fas fa-address-book"></i> Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>"><i class="fas fa-info-circle"></i> About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"><i class="far fa-comment-dots"></i> Feedback</a>
         </li>
       </ul>
     </div>
@@ -56,12 +62,13 @@
     <!-- Login button
     ======================== -->
     <div class="disapear">
-      <a href="studentlog" class="btn px-4 text-primary btn-light">Login</a>
+      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
     </div>
     <!-- Login button end -->
 
   </nav>
   <!--//! ================ Home Navigation End ================ -->
+
 
 
 

@@ -31,7 +31,11 @@ class Online_exam_admin extends CI_Controller
         }
     }
 
-
+    //! if admin do logout then it rturns to admin login page 
+    function admin_logout()
+    {
+        $this->load->view('admin_login');
+    }
 
     //! this  admin homne page that come after login
     function admin_home()

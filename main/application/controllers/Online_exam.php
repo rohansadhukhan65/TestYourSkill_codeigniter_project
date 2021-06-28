@@ -6,6 +6,7 @@ class Online_exam extends CI_Controller
 {
 
 
+/* =========================================  Without Login ==================================== */
 
     //! this is for home page
     function index()
@@ -24,23 +25,19 @@ class Online_exam extends CI_Controller
     //! this for contact page
     function contact()
     {
-        unset($_SESSION['msg']);
-        $this->load->view('contact');
+        $context = array();
         if ($this->input->post('submit')) {
-            $_SESSION['msg'] = "Your request has been submitted.We will contact you soon";  // this msg show after contact form submission
             $student_name = $this->input->post('student_name');
             $student_email = $this->input->post('email');
             $student_phone = $this->input->post('phone');
             $student_query = $this->input->post('query');
             if ($this->Exam_model->student_query_model($student_name, $student_email, $student_phone, $student_query)) {
-                redirect('Online_exam/query_msg');
+                $context['msg'] = "Your request has been submitted. We will contact you soon";  // this msg show after contact form submission
             }
         }
+        $this->load->view('user/contact', $context);
     }
-    function query_msg()
-    {
-        $this->load->view('contact');
-    }
+
 
 
     //! this for feedback page
@@ -64,8 +61,16 @@ class Online_exam extends CI_Controller
     }
 
 
-   
 
+/* =========================================  Without Login End ==================================== */
+
+
+
+
+
+
+
+/* ==================== Student login Sigup logout Related Functions ============================== */
 
 
     //! this for student login page
@@ -78,7 +83,7 @@ class Online_exam extends CI_Controller
             if ($this->Exam_model->student_log_model($_SESSION['student_email'], $student_pass)) {
                 redirect('Online_exam/student_test');
             } else {
-        ?>
+            ?>
                 <div class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
                     <strong>Error!</strong> Invalid email or password.
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -89,10 +94,7 @@ class Online_exam extends CI_Controller
             }
         }
     }
-    function student_test()
-    {
-        $this->load->view('testpage');
-    }
+
 
     //!this is registration of student
     function student_register()
@@ -143,7 +145,8 @@ class Online_exam extends CI_Controller
         }
     }
 
-    //! after register student reffer to relogin
+
+     //! after register student reffer to relogin
     function student_relogin()
     {
         $this->load->view('student_login');
@@ -165,6 +168,34 @@ class Online_exam extends CI_Controller
     }
 
 
+
+/* ==================== Student login Sigup logout Related Functions End ============================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function student_test()
+    {
+        $this->load->view('testpage');
+    }
+
+
+
+    
 
     //! this is a text menu page where we can see different kinds of test
     function test()

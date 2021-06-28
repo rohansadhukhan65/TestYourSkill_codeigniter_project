@@ -1,0 +1,155 @@
+
+
+/*=========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ student login page $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+=========================================================================================================== */
+ * {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+
+.form-box {
+	width: 21rem;
+	height: 410px;
+	position: relative;
+	margin: 6% auto;
+	background: white;
+	padding: 5px;
+	overflow: hidden;
+	border-radius: 10px 20px;
+}
+
+
+
+/*=======================================
+ loggin signup slider button 
+======================================= */
+
+	.button-box 
+	{
+		width: 233px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow: 0 0 20px 9px #0e0e0e1f;
+		border-radius: 30px;
+		outline: none;
+	}
+	.toogle
+	{
+		padding: 9px 30px;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		outline: none;
+		position: relative;
+		
+	}
+	#btn 
+	{
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 120px;
+		height: 100%;
+		background: aliceblue;
+	
+		border-radius: 20px;
+		transition: 0.5s;
+	}
+	#btn1,#btn2 
+	{
+		border: 0;
+		outline: none;
+	}
+	#btn1
+	{
+		color: #007bff;
+		font-weight: bold;
+	}
+	#btn2
+	{
+		color: aliceblue;
+	}
+
+/* =======================================
+ loggin signup slider button  End 
+======================================== */
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+/*==========================================
+ Form & Input Field
+========================================= */
+
+	.input-group 
+	{
+		top: 110px;
+		position: absolute;
+		width: 280px;
+		transition: 0.5s;
+	}
+
+	.input-field 
+	{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid aliceblue;
+		outline: none;
+		background: transparent;
+	}
+	.input-field::placeholder
+	{
+		color: aliceblue;
+		font-weight: lighter;
+	}
+
+/*=========================================
+ Form & Input Field End 
+==========================================*/
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+/*============================================
+Login/Signup Button
+=========================================== */
+
+	input[type="submit"] {
+		width: 85%;
+		padding: 5px 30px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		border: 0;
+		outline: none;
+		border-radius: 30px;
+	}
+
+
+/*=========================================
+ Login/Signup Button End
+======================================== */
+
+
+/* ----------------------------------------xxxxxxxxxxxxxxxx------------------------------------------ */
+
+
+
+
+#login {
+	left: 50px;
+}
+
+#register {
+	left: 450px;
+}  
+
+/*====================================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ student login page End $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+====================================================================================================================== */

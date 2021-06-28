@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback</title>
+  <title>Contact</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-  <script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
+
 
 
   <!-- Fontawsome CDN
@@ -16,10 +16,24 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <!-- Fontawsome CDN End -->
 
+  <style>
+    .contact_heading {
+      font-size: 20px;
+      font-weight: lighter !important;
+    }
 
+    .form-control {
+      height: 30px;
+      color: #007bff !important;
+      border-radius: 10px !important;
+    }
+  </style>
 </head>
 
 <body>
+
+
+
 
   <!--//! ================ Home Navigation ================ -->
   <?php $this->load->view('user/nav.php'); ?>
@@ -28,12 +42,13 @@
 
 
 
+
   <div class="container my-3">
     <?php
-    if (isset($_SESSION['msg'])) {
+    if (!empty($msg)) {
     ?>
       <div class="text-center alert alert-success alert-dismissible fade show mt-2" role="alert">
-        <strong>Thank you 🤗</strong> <?php echo $_SESSION['msg']; ?>
+        <strong>😊</strong> <?php echo $msg; ?>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -41,46 +56,55 @@
     <?php
     }
     ?>
-    <h3 class="center text-info text-center my-5">Give Feedback</h3>
+    <h3 class="center h2 text-primary text-center my-4">Contact Us</h3>
     <div class="row">
-      <div class="col-sm-6 offset-3">
-        <form onsubmit="return feed(event)" method="POST">
-          <h3 class="mx-1 contact_heading">Name</h3>
+      <div class="col-sm-4 offset-sm-4">
+        <form method="POST" action="contact" class="text-primary mb-5">
+
+          <!-- Student Name
+          ===================== -->
           <div class="form-group">
-            <input type="text" name="student_name" class="form-control" id="student_name_feed" required autocomplete="off" aria-describedby="emailHelp">
+            <h3 class="mx-1 contact_heading">Student Name</h3>
+            <input type="text" name="student_name" class="form-control" id="addstudent" required autocomplete="off" aria-describedby="emailHelp">
           </div>
+          <!-- Student Name End -->
 
-          <div id="stu_error" class="text-danger"></div>
-
-
-          <h3 class="mx-1">Email</h3>
+          <!-- Email
+          ===================== -->
           <div class="form-group">
+            <h3 class="mx-1 contact_heading">Email</h3>
             <input type="email" name="email" class="form-control" id="addemail" autocomplete="off" required aria-describedby="emailHelp">
           </div>
+          <!-- Email End -->
 
-          <div id="email_errro" class="text-danger"></div>
-
-
-          <h3 class="mx-1">Share your experience</h3>
+          <!-- Phone
+          ====================== -->
           <div class="form-group">
-            <textarea class="form-control" name="experience" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <h3 class="mx-1 contact_heading">Phone</h3>
+            <input type="tel" name="phone" class="form-control" id="addphone" autocomplete="off" required aria-describedby="emailHelp">
           </div>
+          <!-- Phone End -->
 
-          <div id="issuebk_errro" class="text-danger"></div>
-
-          <div class="row text-center">
-            <div class="col">
-              <input type="submit" id="addbtn3" name="submit" value="Submit" class="mt-3 mb-3">
-            </div>
-            <div class="col">
-              <a href="home" class="text-center btn btn-warning rounded mt-3 mb-3">Cancel</a>
-            </div>
+          <!-- query Input
+          ========================= -->
+          <div class="form-group">
+            <h3 class="mx-1 contact_heading">How may i help you?</h3>
+            <textarea class="form-control" name="query" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <!--this is for error showing if any occcur-->
-          <div id="adderror" class="mt-2 text-danger"></div>
+          <!-- query Input -->
+
+
+          <input style="border-radius: 10px !important; " type="submit" id="" value="Submit" name="submit" class="float-right p-1 btn btn-primary w-50">
+
+
         </form>
       </div>
+
+
+
+
     </div>
+  </div>
   </div>
 
 

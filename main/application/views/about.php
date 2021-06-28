@@ -16,137 +16,178 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <!-- Fontawsome CDN End -->
 
+  <style>
+    .card {
+      border-radius: 25px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 21px;
+    }
+
+    .about_image {
+      border-radius: 50%;
+      margin-top: -27px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2px;
+
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+      background: #FFFFFF;
+      /* fallback for old browsers */
+      /* background: -webkit-linear-gradient(to right, #8e44ad, #c0392b); */
+      /* Chrome 10-25, Safari 5.1-6 */
+      /* background: linear-gradient(to right, #8e44ad, #c0392b); */
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .about_social {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+  </style>
+
 </head>
 
 <body>
 
 
   <!--//! ================ Home Navigation ================ -->
-  <nav class="navbar navbar-expand-lg shadow navbar-dark bg-primary">
-
-    <a class="navbar-brand text-light font-weight-bold">TestYourSkill</a>
-
-    <!-- Login button
-    ======================== -->
-    <div class="apear ml-auto mr-2">
-      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
-    </div>
-    <!-- Login button end -->
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsable nav in mobile
-    ====================================== -->
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"> Feedback</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Collapsable nav in mobile End -->
-
-    <!-- Login button
-    ======================== -->
-    <div class="disapear">
-      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
-    </div>
-    <!-- Login button end -->
-
-  </nav>
+  <?php $this->load->view('user/nav.php'); ?>
   <!--//! ================ Home Navigation End ================ -->
 
 
 
 
-
   <div class="container-fluid">
-    <h3 class="center text-info text-center my-5">About Us</h3>
-    <div class="card border-success">
-      <div class="row">
-        <div class="col-lg-4 border-right border-warning">
-          <div class="card-body">
-            <h5>In the time of technology we dont have the time to waste.In nowdays we all want to learn various things in short time and also want
-              to check our skills.And if you want to check your skill then you are in the Right place.TestYourSkill gives you the opportunity to test
-              your skill on various things Like general knowledge, aptitude, verbal & Reasoning, Java programming, c programming and php programming
-              with free of cost.</h5>
-            </h6>
-          </div>
-        </div>
+    <h3 class="center text-primary text-center my-5">About Us</h3>
 
-        <div class="col-lg-4 border-right border-warning">
-          <div class="card-body">
-            <h5>Testskill takes yours little time to check your skill in mcq formats.
-              In all subject you will get 10 question and get 10 minutes for the exam.
-              You also get a certificate after completing your test.
-              The certificate will sent to your email after the exam.With free test here some paid test will be available also.
-              It is not costly too Much.By paid a little amount you can grab the oppertunity to solve various kinds of
-              previous commpetitive exam question papers also.very soon paid course will be added in this website.
-            </h5>
-          </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card-body">
+          <h5 class="font-weight-light">In the time of technology we dont have the time to waste.In nowdays we all want to learn various things in short time and also want
+            to check our skills.And if you want to check your skill then you are in the Right place.TestYourSkill gives you the opportunity to test
+            your skill on various things Like general knowledge, aptitude, verbal & Reasoning, Java programming, c programming and php programming
+            with free of cost.</h5>
+          </h6>
         </div>
+      </div>
 
-        <div class="col-lg-4">
-          <div class="card-body">
-            <h5>In this website all the questions are set by the admin of ours.
-              They update the questions in every Month.So that we can keep you updated with time.
-              They all add new questions so that you have not to face the same questions everytime.
-              You all have the opportunity to give exam in new question which will help all of you in develop your skills,
-              so it is obviously very important for all of you.
-              And all the topic is very essential for any kinds of commpetitive.So don't waste your valueable time, come on TestYourSkill website
-              and check your skills today.</h5>
-          </div>
+      <div class="col-lg-4 ">
+        <div class="card-body">
+          <h5 class="font-weight-light">Testskill takes yours little time to check your skill in mcq formats.
+            In all subject you will get 10 question and get 10 minutes for the exam.
+            You also get a certificate after completing your test.
+            The certificate will sent to your email after the exam.With free test here some paid test will be available also.
+            It is not costly too Much.By paid a little amount you can grab the oppertunity to solve various kinds of
+            previous commpetitive exam question papers also.very soon paid course will be added in this website.
+          </h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-body">
+          <h5 class="font-weight-light">In this website all the questions are set by the admin of ours.
+            They update the questions in every Month.So that we can keep you updated with time.
+            They all add new questions so that you have not to face the same questions everytime.
+            You all have the opportunity to give exam in new question which will help all of you in develop your skills,
+            so it is obviously very important for all of you.
+            And all the topic is very essential for any kinds of commpetitive.So don't waste your valueable time, come on TestYourSkill website
+            and check your skills today.</h5>
         </div>
       </div>
     </div>
-    <div class=" container-fluid  mt-5 ">
-      <div class="row offset-1 mb-2">
-        <div class="col-lg-2">
-          <div class="card-body border border-success bg-secondary">
-            <img src="<?php echo base_url() ?>image/reettwick.jpeg" class="rounded" height="210px" width="156px">
-          </div>
-          <h6 class="text-center">reettwick226@gmail.com</h6>
-        </div>
 
-        <div class="col-lg-2">
-          <div class="card-body border border-success bg-secondary">
-            <img src="<?php echo base_url() ?>image/arijit.jpeg" class="rounded" height="210px" width="156px">
+    <div class=" container-fluid  my-5 ">
+      <div class="row my-2">
+
+        <!--//! Rohan
+        ================================= -->
+        <div class="col-12 col-md-4">
+          <!-- Details Card
+          ========================== -->
+          <div class="card my-5 bg-primary text-light text-center">
+            <!-- Image
+            ============= -->
+            <div class="about_image">
+              <img class="about_image" src="<?php echo base_url("image/Rohan.jpg"); ?>" height="130" width="130" alt="">
+            </div>
+
+            <!-- Info
+            =============== -->
+            <div class="about-info my-4">
+              <div class="about_social my-3">
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.facebook.com/rohan.sadhukhan.2/"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.instagram.com/call.rohan/"><i class="fab fa-instagram"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.linkedin.com/in/rohan-sadhukhan/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h3 class="my-4 h2 font-weight-light">Rohan Sadhukhan</h3>
+              <p class=" mb-5 display-5 font-weight-light"><i class="fas fa-envelope mr-2"></i> sadhukhanrohan15@gmail.com</p>
+            </div>
           </div>
-          <h6 class="text-center">rajarijit16@gmail.com</h6>
+          <!-- Details Card End -->
         </div>
+        <!-- Rohan End -->
+
+        <!--//! Sneha
+        ================================== -->
+        <div class="col-12 col-md-4">
+          <!-- Details Card
+          ========================== -->
+          <div class="card my-5 bg-primary text-light text-center">
+            <!-- Image
+            ============= -->
+            <div class="about_image">
+              <img class="about_image" src="<?php echo base_url("image/Sneha.jpeg"); ?>" height="130" width="130" alt="">
+            </div>
+
+            <!-- Info
+            =============== -->
+            <div class="about-info my-4">
+              <div class="about_social my-3">
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href=" https://www.facebook.com/profile.php?id=100013778744444"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href=" https://www.instagram.com/ms_mondal31?r=nametag"><i class="fab fa-instagram"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h3 class="my-4 h2 font-weight-light">Sneha Mondal</h3>
+              <p class=" mb-5 display-5 font-weight-light"><i class="fas fa-envelope mr-2"></i> s80172549@gmail.com</p>
+            </div>
+          </div>
+          <!-- Details Card End -->
+        </div>
+        <!-- Sneha End -->
+
+        <!--//! Priya
+        =================================== -->
+        <div class="col-12 col-md-4">
+          <!-- Details Card
+          ========================== -->
+          <div class="card my-5 bg-primary text-light text-center">
+            <!-- Image
+            ============= -->
+            <div class="about_image">
+              <img class="about_image" src="<?php echo base_url("image/Priya.jpeg"); ?>" height="130" width="130" alt="">
+            </div>
+
+            <!-- Info
+            =============== -->
+            <div class="about-info my-4">
+              <div class="about_social my-3">
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.facebook.com/profile.php?id=100031137229168"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.instagram.com/invites/contact/?i=1gpsoi3am15p0&utm_content=55je6pj"><i class="fab fa-instagram"></i></a>
+                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <h3 class="my-4 h2 font-weight-light">Priya Singh</h3>
+              <p class=" mb-5 display-5 font-weight-light"><i class="fas fa-envelope mr-2"></i> singhpriya91636@gmail.com</p>
+            </div>
+          </div>
+          <!-- Details Card End -->
+        </div>
+        <!-- Priya End -->
 
 
-        <div class="col-lg-2">
-          <div class="card-body border border-success bg-secondary">
-            <img src="<?php echo base_url() ?>image/faizan1.jpg" class="rounded" height="210px" width="156px">
-          </div>
-          <h6 class="text-center">saifalam362@gmail.com</h6>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="card-body border border-success bg-secondary">
-            <img src="<?php echo base_url() ?>image/sonu.jpg" class="rounded" height="210px" width="156px">
-          </div>
-          <h6 class="text-center">sonumansuri06@gmail.com</h6>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="card-body border border-success bg-secondary">
-            <img src="<?php echo base_url() ?>image/imran.jpg" class="rounded" height="210px" width="156px">
-          </div>
-          <h6 class="text-center">imranhakim030@gmail.com</h6>
-        </div>
       </div>
     </div>
 

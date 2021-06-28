@@ -42,65 +42,42 @@
 
 
   <!--//! ================ Home Navigation ================ -->
-  <nav class="navbar navbar-expand-lg shadow navbar-dark bg-primary">
-
-    <a class="navbar-brand text-light font-weight-bold">TestYourSkill</a>
-
-    <!-- Login button
-    ======================== -->
-    <div class="apear ml-auto mr-2">
-      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
-    </div>
-    <!-- Login button end -->
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsable nav in mobile
-    ====================================== -->
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>"> Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"> Feedback</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Collapsable nav in mobile End -->
-
-    <!-- Login button
-    ======================== -->
-    <div class="disapear">
-      <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
-    </div>
-    <!-- Login button end -->
-
-  </nav>
+  <?php  $this->load->view('user/nav.php'); ?>
   <!--//! ================ Home Navigation End ================ -->
 
 
-
+ 
 
   <!--//! ============== Main Body Of Home ================  -->
   <div class="row">
+
     <div class="col-12 col-md-6 disapear">
-      <img class="centerimg mt-5" src="<?php echo base_url('image/userside/home.svg') ?>" height="500" alt="">
+      <!-- Image Carausel
+      ============================== -->
+      <div id="carouselExampleCaptions" class="carousel slide ml-5" data-ride="carousel">
+
+        <div class="carousel-inner p-5 ml-3">
+          <div class="carousel-item active mt-4">
+            <img style="opacity: 0.5;" src="<?php echo base_url('image/userside/home.svg') ?>" height="450" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+              <h5 style="font-size: 30px;" class="text-dark ">"keep distance study hard"</h5>
+              <p class="text-primary mb-5 font-weight-bold"> corona virus cant stop us to aquire knowldge.</p>
+            </div>
+          </div>
+          <div class="carousel-item active mt-4">
+            <img style="opacity: 0.3;" src="<?php echo base_url('image/userside/socialdistance.svg') ?>" height="450" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <!-- Image Carausel End -->
     </div>
+
     <div class="col-12 col-md-6">
       <div class="mt-5 pt-5">
-        <h1 class="my-5 pt-5 text-primary text-center font-weight-light">
-          Welcome to <span class="font-weight-bold">TestYourSkill</span>
+        <h1 class="my-5 pt-5 text-dark text-center font-weight-light">
+          Welcome to <span class="font-weight-bold text-primary">TestYourSkill</span>
         </h1>
-        <p class="text-center text-primary">“Skills don’t die; only people do.”</p>
+        <p class="text-center text-dark apear font-weight-bold">“Skills don’t die; only people do.”</p>
         <div class="mt-5 pt-3 text-center">
           <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn shadow font-weight-light startbtn w-50 btn-success">
             Get Started
@@ -108,6 +85,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <!--//! ================ Main Body Of Home End ================ -->
 
@@ -122,6 +100,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <script>
+    $('.carousel').carousel({
+      interval: 1500
+    })
+  </script>
+
 </body>
 
 </html>

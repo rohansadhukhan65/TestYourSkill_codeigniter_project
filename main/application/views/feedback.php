@@ -19,7 +19,7 @@
 
 </head>
 
-<body style="background-image: url('<?php echo base_url(); ?>image/start.jpg');background-size:cover;">
+<body>
 
   <!--//! ================ Home Navigation ================ -->
   <nav class="navbar navbar-expand-lg shadow navbar-dark bg-primary">
@@ -83,7 +83,7 @@
     <?php
     }
     ?>
-    <h3 class="center text-info text-center mt-5 alert alert-warning">Give Feedback</h3>
+    <h3 class="center text-info text-center my-5">Give Feedback</h3>
     <div class="row">
       <div class="col-sm-6 offset-3">
         <form onsubmit="return feed(event)" method="POST">

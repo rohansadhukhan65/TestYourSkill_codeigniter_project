@@ -18,7 +18,7 @@
 
 </head>
 
-<body style="background-image: url('<?php echo base_url(); ?>image/start.jpg');background-size:cover;">
+<body>
 
 
 
@@ -86,7 +86,7 @@
     <?php
     }
     ?>
-    <h3 class="center text-info text-center mt-5 alert alert-dark">Contact Us</h3>
+    <h3 class="center text-info text-center my-5">Contact Us</h3>
     <div class="row">
       <div class="col-sm-6 offset-3">
         <form method="POST" action="contact">

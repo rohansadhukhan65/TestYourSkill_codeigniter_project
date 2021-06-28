@@ -18,7 +18,7 @@
 
 </head>
 
-<body style="background-image: url('<?php echo base_url(); ?>image/start.jpg');background-size:cover;">
+<body>
 
 
   <!--//! ================ Home Navigation ================ -->
@@ -72,7 +72,7 @@
 
 
   <div class="container-fluid">
-    <h3 class="center text-primary text-center mt-5 alert alert-dark">About Us</h3>
+    <h3 class="center text-info text-center my-5">About Us</h3>
     <div class="card border-success">
       <div class="row">
         <div class="col-lg-4 border-right border-warning">

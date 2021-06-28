@@ -102,7 +102,7 @@
         </h1>
         <p class="text-center text-primary">“Skills don’t die; only people do.”</p>
         <div class="mt-5 pt-3 text-center">
-          <a href="studentlog" class="btn shadow font-weight-light startbtn w-50 btn-success">
+          <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn shadow font-weight-light startbtn w-50 btn-success">
             Get Started
           </a>
         </div>

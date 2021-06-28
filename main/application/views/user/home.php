@@ -65,13 +65,13 @@
           <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>"><i class="fas fa-address-book"></i> Contact Us</a>
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>"> Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>"><i class="fas fa-info-circle"></i> About Us</a>
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"><i class="far fa-comment-dots"></i> Feedback</a>
+          <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"> Feedback</a>
         </li>
       </ul>
     </div>

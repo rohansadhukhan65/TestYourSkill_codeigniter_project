@@ -62,43 +62,61 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ admin login page End $$$$$$$$$$$$$
 
 
 
-/* It is the color of card body of testpage*/
+/*=======================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ It is the color of card body of testpage $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+===========================================================================================================*/
+
 #box1 {
 	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
-	background-color: rgb(233, 104, 153);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
 #box2 {
 	/* background-image: -webkit-linear-gradient(left,rgb(123, 255, 0),rgb(255, 102, 0)); */
-	background-color: rgb(92, 243, 167);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
 #box3 {
 	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
-	background-color: rgb(122, 216, 216);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
 #box4 {
 	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
-	background-color: rgb(240, 213, 61);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
 #box5 {
 	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
-	background-color: rgb(161, 170, 218);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
 #box6 {
 	/* background-image: -webkit-linear-gradient(left,blue,yellow); */
-	background-color: rgb(163, 236, 143);
-	border-radius: 15px 25px;
+	background-color: #007bff;
+	color: aliceblue;
+	border-radius: 0px 0px 14px 14px;
+	font-weight: lighter;
 }
 
+/*===========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ It is the color of card body of testpage End $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+==============================================================================================================*/
 
 
 

@@ -6,7 +6,9 @@ class Online_exam extends CI_Controller
 {
 
 
+/* =========================================  ------------- ==================================== */
 /* =========================================  Without Login ==================================== */
+/* =========================================  ------------- ==================================== */
 
     //! this is for home page
     function index()
@@ -18,7 +20,7 @@ class Online_exam extends CI_Controller
     //! this for about page
     function about()
     {
-        $this->load->view('about');
+        $this->load->view('user/about');
     }
 
 
@@ -31,11 +33,16 @@ class Online_exam extends CI_Controller
             $student_email = $this->input->post('email');
             $student_phone = $this->input->post('phone');
             $student_query = $this->input->post('query');
-            if ($this->Exam_model->student_query_model($student_name, $student_email, $student_phone, $student_query)) {
-                $context['msg'] = "Your request has been submitted. We will contact you soon";  // this msg show after contact form submission
+            if ($this->Exam_model->student_query_model($student_name, $student_email, $student_phone, $student_query)) 
+            {
+                $context['msg'] = "<b>" .$student_name. "</b> Your request has been submitted. We will contact you soon";  // this msg show after contact form submission
+                $this-> load->view('user/contact', $context);
             }
         }
-        $this->load->view('user/contact', $context);
+        else{
+            $this->load->view('user/contact', $context);
+
+        }
     }
 
 
@@ -43,26 +50,30 @@ class Online_exam extends CI_Controller
     //! this for feedback page
     function feedback()
     {
-        unset($_SESSION['msg']);
-        $this->load->view('feedback');
+        $context = Array();
         if ($this->input->post('submit')) {
-            $_SESSION['msg'] = "Your response has been submitted";  // this msg show after contact form submission
             $student_name = $this->input->post('student_name');
             $student_email = $this->input->post('email');
             $feedback = $this->input->post('experience');
-            if ($this->Exam_model->student_feedback_model($student_name, $student_email, $feedback)) {
-                redirect('Online_exam/feed_msg');
+            if ($this->Exam_model->student_feedback_model($student_name, $student_email, $feedback)) 
+            {
+                $context['msg'] = "<b>" . $student_name . "</b> Your response has been submitted";  // this msg show after contact form submission
+                $this-> load->view('user/feedback', $context);
             }
         }
+        else{
+            $this->load->view('user/feedback', $context);
+
+        }
+
     }
-    function feed_msg()
-    {
-        $this->load->view('feedback');
-    }
+    
 
 
 
+/* =========================================  ----------------- ==================================== */
 /* =========================================  Without Login End ==================================== */
+/* =========================================  ----------------- ==================================== */
 
 
 
@@ -70,7 +81,13 @@ class Online_exam extends CI_Controller
 
 
 
+
+
+
+
+/* ==================== -------------------------------------------- ============================== */
 /* ==================== Student login Sigup logout Related Functions ============================== */
+/* ==================== -------------------------------------------- ============================== */
 
 
     //! this for student login page
@@ -169,7 +186,9 @@ class Online_exam extends CI_Controller
 
 
 
+/* ==================== ------------------------------------------------ ============================== */
 /* ==================== Student login Sigup logout Related Functions End ============================== */
+/* ==================== ------------------------------------------------ ============================== */
 
 
 
@@ -184,24 +203,29 @@ class Online_exam extends CI_Controller
 
 
 
-
+/*====================================== ----------- =============================================*/
+/*====================================== after login =============================================*/
+/*====================================== ----------- =============================================*/
 
 
 
     function student_test()
     {
-        $this->load->view('testpage');
+        if(!empty($_SESSION['student_email']))
+        {
+            $this->load->view('user/testpage');
+        }
+        else
+        {
+            redirect(base_url('index.php/Online_exam/studentlog'));
+        }
     }
 
 
 
     
 
-    //! this is a text menu page where we can see different kinds of test
-    function test()
-    {
-        $this->load->view('testpage');
-    }
+    
 
 
     //! this for general apptitude test which will show all topic of different subject of general apptitude test 
@@ -315,7 +339,7 @@ class Online_exam extends CI_Controller
 
 
     //! this for php test.there is 3 part and when click on that exam page open directly
-    function php_mcq_test1()
+ /*    function php_mcq_test1()
     {
         $this->load->view('phpmcqset1');
     }
@@ -326,7 +350,7 @@ class Online_exam extends CI_Controller
     function php_mcq_test3()
     {
         $this->load->view('phpmcqset3');
-    }
+    } */
 
 
 
@@ -342,15 +366,19 @@ class Online_exam extends CI_Controller
     //! here user can give exam
     function start_exam()
     {
-        if (isset($_SESSION['student_email'])) {
+        if (isset($_SESSION['student_email'])) 
+        {
             unset($_SESSION['msg']);
             $result = $this->Exam_model->student_name_fetch($_SESSION['student_email']);
-            foreach ($result as $row) {
+            foreach ($result as $row) 
+            {
                 $_SESSION['std_name'] = $row->name;
             }
             $question['ques'] = $this->Exam_model->question_fetch($_SESSION['topic_name']);
             $this->load->view('start_exam_page', $question);
-        } else {
+        } 
+        else 
+        {
             $_SESSION['msg'] = "You have to login first for taking the exam ";
             $this->load->view('start_exam_page');
         }
@@ -361,29 +389,38 @@ class Online_exam extends CI_Controller
     {
 
         if ($this->input->post('submit')) {
-            if (!empty($this->input->post('q'))) {
+            if (!empty($this->input->post('q'))) 
+            {
                 $_SESSION['msg'] = "You"; // we kept it so that we can understand that student select any option or not
                 $right = 0;
                 $wrong = 0;
                 $count = count($this->input->post('q'));
                 $option = $this->input->post('q');
-                //print_r($option);
+      
+                
                 //radioa button send two value so that we take that value and convert into array so that we can seperately access q_id and ans
-                foreach ($option as $row) {
+                foreach ($option as $row) 
+                {
                     $op = explode(',', $row); // converting into array
                     $selected_ans[] = $op[0]; // as above told we select that two value by index into array because there is more than one question
                     $selected_qid[] = $op[1];
                 }
+
                 //we now run the for loop till the length of question id or $selected_qid so that we can match selected_ans and answer
                 //  from database for that particular question 
-                for ($i = 0; $i < count($selected_qid); $i++) {
+                for ($i = 0; $i < count($selected_qid); $i++) 
+                {
                     $result = $this->Exam_model->fetch_question_byid($selected_qid[$i]);
-                    foreach ($result as $row) {
+                    foreach ($result as $row) 
+                    {
                         $fetch_ans = $row->answer;
                     }
-                    if ($selected_ans[$i] == $fetch_ans) {
+                    if ($selected_ans[$i] == $fetch_ans) 
+                    {
                         $right += 1;
-                    } else {
+                    } 
+                    else 
+                    {
                         $wrong += 1;
                     }
                 }
@@ -391,7 +428,12 @@ class Online_exam extends CI_Controller
                 $this->Exam_model->save_result_students($_SESSION['std_name'], $_SESSION['topic_name'], $right);
 
 
-                $std_result['result'] = array("Number of question attempt" => $count, "Number of question correct" => $right, "Number of question incorrect-" => $wrong);
+                /* Calling view */
+                $std_result['result'] = array(
+                    "<span class='text-info'> Number of question attempt </span>" => "<span class='badge badge-info badge-pill text-light p-2'>".$count."</span>",
+                    "<span class='text-success'>Number of question correct </span>" => "<span class='badge badge-success badge-pill text-light p-2'>" . $right . "</span>",
+                    "<span class='text-danger'>Number of question incorrect - </span>" => "<span class='badge badge-danger badge-pill text-light p-2'>" . $wrong . "</span>"
+                );
                 $this->load->view('student_result', $std_result);
 
 
@@ -416,13 +458,21 @@ class Online_exam extends CI_Controller
                 $this->email->subject($sub);
                 $this->email->message($body);
                 $this->email->send();
-            } else {
+            } 
+            else 
+            {
                 unset($_SESSION['msg']);
                 $this->load->view('student_result');
             }
-        } else {
+        } 
+        else 
+        {
             echo "not";
         }
     }
+/*====================================== --------------- =============================================*/
+/*====================================== after login End =============================================*/
+/*====================================== --------------- =============================================*/
+
 }
 ?>

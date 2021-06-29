@@ -6,7 +6,7 @@
       <!-- Login button
     ======================== -->
       <div class="apear ml-auto mr-2">
-          <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
+          <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-3 text-primary btn-light"><i class="fas fa-user"></i> Login</a>
       </div>
       <!-- Login button end -->
 
@@ -22,10 +22,10 @@
                   <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>">Contact Us</a>
+                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
               </li>
               <li class="nav-item active">
-                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
+                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>">Contact Us</a>
               </li>
               <li class="nav-item active">
                   <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/feedback') ?>"> Feedback</a>
@@ -37,7 +37,7 @@
       <!-- Login button
     ======================== -->
       <div class="disapear">
-          <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light">Login</a>
+          <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light"><i class="fas fa-user"></i> Login</a>
       </div>
       <!-- Login button end -->
 

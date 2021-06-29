@@ -11,9 +11,9 @@ class Online_exam_admin extends CI_Controller
         $this->load->view('admin/home/admin_login');
         if ($this->input->post('submit')) 
         {
-            $admin_email = $this->input->post('email');
+            $_SESSION['admin_email'] = $this->input->post('email');
             $admin_pass = $this->input->post('pass');
-            if ($this->Exam_model->admin($admin_email, $admin_pass)) 
+            if ($this->Exam_model->admin($_SESSION['admin_email'], $admin_pass)) 
             {
                 redirect(base_url('index.php/Online_exam_admin/admin_home'));
             } 
@@ -34,14 +34,21 @@ class Online_exam_admin extends CI_Controller
     //! if admin do logout then it rturns to admin login page 
     function admin_logout()
     {
+        unset($_SESSION['admin_email']);
         $this->load->view('admin_login');
     }
 
     //! this  admin homne page that come after login
     function admin_home()
     {
-        
-        $this->load->view('admin/home/home');
+        if(!empty($_SESSION['admin_email']))
+        {
+            $this->load->view('admin/home/home');
+        }
+        else
+        {
+            redirect(base_url('index.php/Online_exam_admin/adminlog'));
+        }
     }
 
 

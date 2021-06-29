@@ -55,7 +55,7 @@
 
 
   <!--//! ================ Home Navigation ================ -->
-  <?php $this->load->view('user/nav.php'); ?>
+  <?php $this->load->view('user/NavBars/nav.php'); ?>
   <!--//! ================ Home Navigation End ================ -->
 
 

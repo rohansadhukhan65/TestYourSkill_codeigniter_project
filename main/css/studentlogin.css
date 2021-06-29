@@ -103,11 +103,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ student login page $$$$$$$$$$$$$$$
 		border-bottom: 1px solid aliceblue;
 		outline: none;
 		background: transparent;
+		color: aliceblue !important;
 	}
 	.input-field::placeholder
 	{
 		color: aliceblue;
-		font-weight: lighter;
+		font-weight: lighter !important;
+		font-size: 15px !important;
 	}
 
 /*=========================================

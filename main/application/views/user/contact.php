@@ -24,7 +24,6 @@
 
     .form-control {
       height: 30px;
-      color: #007bff !important;
       border-radius: 10px !important;
     }
   </style>
@@ -36,7 +35,7 @@
 
 
   <!--//! ================ Home Navigation ================ -->
-  <?php $this->load->view('user/nav.php'); ?>
+  <?php $this->load->view('user/NavBars/nav.php'); ?>
   <!--//! ================ Home Navigation End ================ -->
 
 
@@ -48,7 +47,7 @@
     if (!empty($msg)) {
     ?>
       <div class="text-center alert alert-success alert-dismissible fade show mt-2" role="alert">
-        <strong>😊</strong> <?php echo $msg; ?>
+        <?php echo $msg; ?> <strong>😊</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -56,10 +55,12 @@
     <?php
     }
     ?>
+
+
     <h3 class="center h2 text-primary text-center my-4">Contact Us</h3>
     <div class="row">
       <div class="col-sm-4 offset-sm-4">
-        <form method="POST" action="contact" class="text-primary mb-5">
+        <form method="POST" action="contact" class="mb-5">
 
           <!-- Student Name
           ===================== -->
@@ -94,7 +95,7 @@
           <!-- query Input -->
 
 
-          <input style="border-radius: 10px !important; " type="submit" id="" value="Submit" name="submit" class="float-right p-1 btn btn-primary w-50">
+          <input style="border-radius: 10px !important;" type="submit" id="" value="Submit" name="submit" class="float-right p-1 btn btn-primary w-50">
 
 
         </form>

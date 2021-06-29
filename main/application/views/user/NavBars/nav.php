@@ -5,7 +5,7 @@
 
       <!-- Login button
     ======================== -->
-      <div class="apear ml-auto mr-2">
+      <div class="apearlog ml-auto mr-2">
           <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-3 text-primary btn-light"><i class="fas fa-user"></i> Login</a>
       </div>
       <!-- Login button end -->
@@ -36,7 +36,7 @@
 
       <!-- Login button
     ======================== -->
-      <div class="disapear">
+      <div class="disapearlog">
           <a href="<?php echo base_url('index.php/Online_exam/studentlog') ?>" class="btn px-4 text-primary btn-light"><i class="fas fa-user"></i> Login</a>
       </div>
       <!-- Login button end -->

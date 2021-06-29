@@ -69,12 +69,28 @@ Comon css
       display: none ;
     }
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 768px) {
       .disapear {
         display: none;
       }
 
       .apear {
+        display: block;
+      }
+
+    }
+
+
+	.apearlog {
+      display: none ;
+    }
+
+    @media screen and (max-width: 990px) {
+      .disapearlog {
+        display: none;
+      }
+
+      .apearlog {
         display: block;
       }
 

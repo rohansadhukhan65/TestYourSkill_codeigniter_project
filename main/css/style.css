@@ -69,7 +69,7 @@ Comon css
       display: none ;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 990px) {
       .disapear {
         display: none;
       }

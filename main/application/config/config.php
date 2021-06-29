@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $config['base_url'] = 'http://localhost/codeigniter/TestYourSkill/main/';   
 
 //Sneha's System path
-$config['base_url'] = 'http://localhost/TestYourSkill_codeigniter_project/main/'; 
+// $config['base_url'] = 'http://localhost/TestYourSkill_codeigniter_project/main/'; 
 
 //Priya's System path
 // $config['base_url'] = 'http://localhost/college_major_project\TestYourSkill_codeigniter_project\main'; 

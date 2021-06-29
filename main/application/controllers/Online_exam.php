@@ -208,7 +208,7 @@ class Online_exam extends CI_Controller
 /*====================================== ----------- =============================================*/
 
 
-
+    /* a page where all tests are listed  */
     function student_test()
     {
         if(!empty($_SESSION['student_email']))
@@ -223,138 +223,7 @@ class Online_exam extends CI_Controller
 
 
 
-    
-
-    
-
-
-    //! this for general apptitude test which will show all topic of different subject of general apptitude test 
-    function arithematic_aptitude()
-    {
-        $this->load->view('arithematic');
-    }
-
-
-
-    //! this for data interpretation test which will show all topic of different subject of data interpretation  test 
-    function simple_math()
-    {
-        $this->load->view('math');
-    }
-
-
-
-
-    //! this for online aptitude test which will show all topic of different subject of aptitude  test 
-    function online_aptitude()
-    {
-        $this->load->view('aptitude');
-    }
-
-
-
-
-    //! this for verval ability test which will show all topic of different subject of ability  test 
-    function verbal_ability()
-    {
-        $this->load->view('verbal');
-    }
-
-
-
-
-
-    //! this for  reasoning test which will show all topic of different subject of reasoning  test 
-    function logical_reasoning()
-    {
-        $this->load->view('logical');
-    }
-
-
-
-
-    //! this for non verbal reasoning test which will show all topic of different subject of non verbal reasoning  test 
-    function non_verbal_reasoning()
-    {
-        $this->load->view('nonverbal');
-    }
-
-
-
-
-    //! this for non general knowledge test which will show all topic of different subject of general knowledge  test 
-    function basic_general_knowledge()
-    {
-        $this->load->view('generalknowledge');
-    }
-
-
-
-    //! this for non general science test which will show all topic of different subject of general science  test
-    function general_science()
-    {
-        $this->load->view('generalscience');
-    }
-
-
-
-    //! this for non general science test which will show all topic of different subject of general science  test
-    function current_affairs()
-    {
-        $this->load->view('currentaffairs');
-    }
-
-
-    //! this for java test.there is 3 part and when click on that exam page open directly
-    function java_mcq_test1()
-    {
-        $this->load->view('mcqset1');
-    }
-    function java_mcq_test2()
-    {
-        $this->load->view('mcqset2');
-    }
-    function java_mcq_test3()
-    {
-        $this->load->view('mcqset3');
-    }
-
-
-
-
-    //! this for c test.there is 3 part and when click on that exam page open directly
-    function c_mcq_test1()
-    {
-        $this->load->view('cmcqset1');
-    }
-    function c_mcq_test2()
-    {
-        $this->load->view('cmcqset2');
-    }
-    function c_mcq_test3()
-    {
-        $this->load->view('cmcqset3');
-    }
-
-
-
-    //! this for php test.there is 3 part and when click on that exam page open directly
- /*    function php_mcq_test1()
-    {
-        $this->load->view('phpmcqset1');
-    }
-    function php_mcq_test2()
-    {
-        $this->load->view('phpmcqset2');
-    }
-    function php_mcq_test3()
-    {
-        $this->load->view('phpmcqset3');
-    } */
-
-
-
-
+    /* page before start filling the examination form */
     function start_button_page()
     {
         $_SESSION['topic_name'] = $this->input->get('topic'); // we take the topic name according that we load the page when user start exam

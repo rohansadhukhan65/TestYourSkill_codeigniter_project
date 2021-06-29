@@ -46,7 +46,7 @@
                     Best of Luck ! <?php echo (isset($_SESSION['std_name'])) ? $_SESSION['std_name'] : ''; ?>
                 </h3> -->
                 <br>
-                <h2 class="text-primary text-center mt-5 font-weight-bold"> <?php echo $_REQUEST['topic'] ?> </h2>
+                <h2 class="text-primary text-center mt-5 font-weight-bold"> <?php echo $_SESSION['topic_name'] ?> </h2>
 
 
                 <!-- Examination Information

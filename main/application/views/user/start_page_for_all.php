@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="mb-3 mt-5 pt-5">
-                <a href="start_exam?topic=<?php echo $_REQUEST['topic'] ?>" class="text-decoration-none">
+                <a href="start_exam" class="text-decoration-none">
                     <button style="border: none; outline:none; border-radius:15px;" type="button" class="shadow font-weight-light text-light btn-lg btn-success m-auto d-block">Start Exam <i class="fas fa-arrow-circle-right"></i> </button>
                 </a>
             </div>

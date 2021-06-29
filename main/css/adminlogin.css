@@ -1,0 +1,59 @@
+/*============================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ admin login page $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+======================================================================================================================= */
+
+.home {
+	border: aqua;
+	border-radius: 20px;
+}
+ 
+ 
+/* to center the form */
+.submain {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	 
+	border-color: aliceblue;
+	 
+	border-radius: 25px;
+}
+.undermain {
+	position: relative;
+}
+label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 17px;
+	transition: all 0.5s;
+	color: #007bff;
+}
+h2 {
+	margin-bottom: 35px;
+	text-align: center;
+	color: #007bff;
+}
+input {
+	margin-bottom: 35px;
+	padding: 0px 4px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #007bff ;
+	background: transparent;
+	width: 100%;
+	color: #007bff;
+}
+ 
+input:focus ~ label,
+input:valid ~ label {
+	top: -20px;
+	left: 0;
+	font-size: 15px;
+	color: rgb(0, 123, 255);
+}
+/*========================================================================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ admin login page End $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ===================================================================================================================*/

@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS
     ============================ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-    <script type="text/javascript" src="<?php echo base_url(); ?>js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/adminlogin.css">
+
 </head>
 
 <body class="bg-primary">

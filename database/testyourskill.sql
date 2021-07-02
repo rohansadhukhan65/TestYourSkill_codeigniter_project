@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2021 at 12:29 AM
+-- Generation Time: Jul 02, 2021 at 10:57 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.5
 
@@ -59,7 +59,20 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`std_id`, `student_name`, `email`, `phone`, `query`) VALUES
-(9, 'rohan', 'rohansadhukhan88@gmail.com', 7003459639, 'how to login ?');
+(9, 'rohan', 'rohansadhukhan88@gmail.com', 7003459639, 'how to login ?'),
+(10, 'rohan', 'a@gmail.com', 12345, 'fgf'),
+(11, 'r', 'r@gmail.com', 12345, 'gh'),
+(12, 'demo', 'demo@gmail.com', 12345, 'demo'),
+(13, 'n', 'n@gmail.com', 12345, 'fg'),
+(14, 'n', 'a@gmail.com', 3, 'f'),
+(15, 'j', 'D@gmail.com', 3, 'gf'),
+(16, 'r', 'r@gmail.com', 12345, 'th'),
+(17, 'hg', 'gh@gmail.com', 12345, 't'),
+(18, 'Rohan Sadhukhan', 'sadhukhanrohan15@gmail.com', 7003459639, 'Can i take Retest?\r\n'),
+(19, 'Sneha Mondal', 'sadhukhanrohan15@gmail.com', 917003459639, 'Can i take Retest?\r\n'),
+(20, 'Priya Singh', 'Priya@gmail.com', 5698733659, 'how to login?'),
+(21, 'Bijesh Gupta', 'root@gmail.com', 7003459639, 'how to start xam ?'),
+(22, 'Bijesh Gupta', 'root@gmail.com', 7003459639, 'how to start xam ?');
 
 -- --------------------------------------------------------
 
@@ -79,7 +92,9 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`feed_id`, `name`, `email`, `experience`) VALUES
-(6, 'Rakesh Ghosh', 'abc@gmail.com', 'The Website is very good for test my skill.');
+(6, 'Rakesh Ghosh', 'abc@gmail.com', 'The Website is very good for test my skill.'),
+(10, 'Rohan Sadhukhan', 'sadhukhanrohan15@gmail.com', 'Awsome !'),
+(11, 'sneha mondal', 'sneha@gmail.com', 'my skills are really improved!\r\n');
 
 -- --------------------------------------------------------
 
@@ -506,8 +521,14 @@ CREATE TABLE `student_result` (
 --
 
 INSERT INTO `student_result` (`std_id`, `name`, `topic`, `score`) VALUES
-(127, 'decode_ro', 'C Mcq Test1', 2),
-(132, 'admin', 'Chemistry', 2);
+(164, 'admin', 'Antonyms', 6),
+(165, 'admin', 'Current Affairs 2019', 3),
+(166, 'admin', 'Antonyms', 6),
+(167, 'admin', 'Current Affairs 2019', 3),
+(168, 'admin', 'Current Affairs 2019', 3),
+(169, 'admin', 'Series', 3),
+(173, 'admin', 'Computer', 2),
+(174, 'admin', 'C Mcq Test1', 4);
 
 --
 -- Indexes for dumped tables
@@ -563,13 +584,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `feed_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `question_table`
@@ -587,7 +608,7 @@ ALTER TABLE `student_details`
 -- AUTO_INCREMENT for table `student_result`
 --
 ALTER TABLE `student_result`
-  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
+  MODIFY `std_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

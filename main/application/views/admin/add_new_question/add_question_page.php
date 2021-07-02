@@ -43,7 +43,7 @@
             =============================== -->
             <div class="form-group text-center ">
                 <h5 class="mx-2">Select Topic</h5>
-                <select style="border-radius: 10px;" class="form-select alert p-0 alert-primary" name="topic" require aria-label="Default select example">
+                <select style="border-radius: 10px; border-color:#72cd9c73;" class="form-select alert p-1 btn btn-outline-success" name="topic" require aria-label="Default select example">
                     <<option selected disabled>Choose</option>
                         <option value="Problem Set1">Problem Set1</option>
                         <option value="Problem Set2">Problem Set2</option>

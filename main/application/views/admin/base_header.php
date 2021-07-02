@@ -56,11 +56,7 @@
 
 <body id="landing" class="sidebar-open">
 
-    <!-- PreLoader -->
-    <!-- <div class="loading">
-        <div class="loading-center"><img src="https://bootadmin.org/images/loading/map.gif" alt="Loading" /></div>
-    </div> -->
-    <!-- Pre Loader end -->
+
 
 
 
@@ -163,6 +159,12 @@
                         </a>
                     </li>
                     <!-- Side Menu Items End -->
+
+                    <!-- Logout -->
+                    <div class="my-3 text-center">
+                        <a href="admin_logout" style="border-color:red; border-radius:10px;" class="btn pl-2 w-50 btn-outline-danger"><i class="fas mr-1 fa-sign-out-alt" aria-hidden="true"></i> Logout</a>
+                    </div>
+                    <!-- Logout End -->
 
                 </ul>
             </div>

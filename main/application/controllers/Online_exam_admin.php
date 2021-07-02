@@ -35,7 +35,7 @@ class Online_exam_admin extends CI_Controller
     function admin_logout()
     {
         unset($_SESSION['admin_email']);
-        $this->load->view('admin_login');
+        redirect(base_url('index.php/Online_exam_admin/adminlog'));
     }
 
     //! this  admin homne page that come after login

@@ -39,13 +39,13 @@
         } ?>
         <!-- Success Message End -->
 
-        <form action="<?php echo $_SERVER['REQUEST_URI']?>" method="POST">
+        <form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="POST">
 
             <!-- topic chose select box
             =============================== -->
             <div class="form-group text-center ">
                 <h5 class="mx-2">Select Topic</h5>
-                <select style="border-radius: 10px;" class="form-select alert p-0 alert-primary" name="topic" require aria-label="Default select example">
+                <select style="border-radius: 10px; border-color:#72cd9c73;" class="form-select alert p-1 btn btn-outline-success" name="topic" require aria-label="Default select example">
                     <<option selected disabled>Choose</option>
                         <option id="Problem Set1" value="Problem Set1">Problem Set1</option>
                         <option id="Problem Set2" value="Problem Set2">Problem Set2</option>
@@ -181,7 +181,7 @@
             ======================= -->
             <div class="row">
                 <div class="col-12">
-                    <input type="submit" name="submit" value="Add Question" id="addbtn3" style="border-radius: 10px;" class="ml-auto mr-auto btn btn-primary shadow my-3 w-50">
+                    <input type="submit" name="submit" value="Edit Question" id="addbtn3" style="border-radius: 10px;" class="ml-auto mr-auto btn btn-primary shadow my-3 w-50">
                 </div>
             </div>
             <!-- Add  button End -->

@@ -296,5 +296,14 @@ class Exam_model extends CI_Model
             return false;
         }
     }
+
+
+
+    /* Added by Rohan Sadhukhan */
+    function questionCount($t)
+    {
+        $qry = "SELECT * FROM `question_table` WHERE `topic` = '$t'";
+        return $this->db->query($qry)->num_rows();
+    }
 }
 ?>

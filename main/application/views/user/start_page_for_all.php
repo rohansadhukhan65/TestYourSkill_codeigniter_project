@@ -53,7 +53,7 @@
 
                 </div>
                 <div class="col-lg-2 text-center mt-5">
-                    <h4 class="text-start text-warning">10 Qs</h4>
+                    <h4 class="text-start text-warning"><?php echo $_SESSION['q_count']?> Qs</h4>
                 </div>
             </div>
             <div class="row">

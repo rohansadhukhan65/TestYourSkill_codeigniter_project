@@ -53,7 +53,7 @@
                 ====================================== -->
                 <div class="d-flex my-5 mx-sm-5 px-sm-5">
                     <span class="text-danger font-weight-bold mr-auto">Total Exam Time : 10 mins</span>
-                    <span class="text-warning font-weight-bold"> Number Of Question : 10 Qs </span>
+                    <span class="text-warning font-weight-bold"> Number Of Question : <?php echo $_SESSION['q_count'] ?> Qs </span>
                 </div>
                 <!-- Examination Information End -->
 

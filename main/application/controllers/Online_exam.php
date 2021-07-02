@@ -214,6 +214,7 @@
             function start_button_page()
             {
                 $_SESSION['topic_name'] = $this->input->get('topic'); // we take the topic name according that we load the page when user start exam
+                $_SESSION['q_count'] = $this->Exam_model->questionCount($_SESSION['topic_name']);
                 $this->load->view('user/start_page_for_all');  // start exam page of that, below two is same as it
             }
 

@@ -22,7 +22,7 @@
                   <a class="nav-link" href="<?php echo base_url() ?>"><i class="fas h5 fa-home"></i> Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About Us</a>
+                  <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/about') ?>">About</a>
               </li>
               <li class="nav-item active">
                   <a class="nav-link" href="<?php echo base_url('index.php/Online_exam/contact') ?>">Contact Us</a>

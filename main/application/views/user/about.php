@@ -62,7 +62,7 @@
 
 
   <div class="container-fluid">
-    <h3 class="center text-primary text-center my-5">About Us</h3>
+    <h3 class="center text-primary text-center my-5">About</h3>
 
     <div class="row">
       <div class="col-lg-4">
@@ -101,11 +101,11 @@
     </div>
 
     <div class=" container-fluid  my-5 ">
-      <div class="row my-2">
+      <div class=" my-2">
 
         <!--//! Rohan
         ================================= -->
-        <div class="col-12 col-md-4">
+        <div class="">
           <!-- Details Card
           ========================== -->
           <div class="card my-5 bg-primary text-light text-center">
@@ -130,63 +130,6 @@
           <!-- Details Card End -->
         </div>
         <!-- Rohan End -->
-
-        <!--//! Sneha
-        ================================== -->
-        <div class="col-12 col-md-4">
-          <!-- Details Card
-          ========================== -->
-          <div class="card my-5 bg-primary text-light text-center">
-            <!-- Image
-            ============= -->
-            <div class="about_image">
-              <img class="about_image" src="<?php echo base_url("image/Sneha.jpeg"); ?>" height="130" width="130" alt="">
-            </div>
-
-            <!-- Info
-            =============== -->
-            <div class="about-info my-4">
-              <div class="about_social my-3">
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href=" https://www.facebook.com/profile.php?id=100013778744444"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href=" https://www.instagram.com/ms_mondal31?r=nametag"><i class="fab fa-instagram"></i></a>
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <h3 class="my-4 h2 font-weight-light">Sneha Mondal</h3>
-              <p class=" mb-5 display-5 font-weight-light"><i class="fas fa-envelope mr-2"></i> s80172549@gmail.com</p>
-            </div>
-          </div>
-          <!-- Details Card End -->
-        </div>
-        <!-- Sneha End -->
-
-        <!--//! Priya
-        =================================== -->
-        <div class="col-12 col-md-4">
-          <!-- Details Card
-          ========================== -->
-          <div class="card my-5 bg-primary text-light text-center">
-            <!-- Image
-            ============= -->
-            <div class="about_image">
-              <img class="about_image" src="<?php echo base_url("image/Priya.jpeg"); ?>" height="130" width="130" alt="">
-            </div>
-
-            <!-- Info
-            =============== -->
-            <div class="about-info my-4">
-              <div class="about_social my-3">
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.facebook.com/profile.php?id=100031137229168"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://www.instagram.com/invites/contact/?i=1gpsoi3am15p0&utm_content=55je6pj"><i class="fab fa-instagram"></i></a>
-                <a class="mx-3 h3" style="text-decoration: none; color:#FFFFFF;" target="_blank" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <h3 class="my-4 h2 font-weight-light">Priya Singh</h3>
-              <p class=" mb-5 display-5 font-weight-light"><i class="fas fa-envelope mr-2"></i> singhpriya91636@gmail.com</p>
-            </div>
-          </div>
-          <!-- Details Card End -->
-        </div>
-        <!-- Priya End -->
-
 
       </div>
     </div>
